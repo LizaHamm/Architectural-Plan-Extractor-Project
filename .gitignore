@@ -1,0 +1,139 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv
+.env
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Jupyter Notebook outputs (optionnel - décommentez si vous voulez ignorer les sorties)
+# *.ipynb
+
+# PyCharm / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Modèles de machine learning (généralement trop volumineux)
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.ckpt
+*.safetensors
+models/*.pt
+models/*.pth
+models/*.h5
+models/*.pkl
+!models/.gitkeep
+
+# Données volumineuses (PDFs, images, annotations)
+# Décommentez les lignes suivantes si vous ne voulez pas versionner les données
+# data/pdfs/*.pdf
+# data/images/*
+# data/annotations/*
+# !data/.gitkeep
+# !data/pdfs/.gitkeep
+# !data/images/.gitkeep
+# !data/annotations/.gitkeep
+
+# Outputs et résultats temporaires
+output/*
+!output/.gitkeep
+*.tmp
+*.temp
+*.log
+
+# Fichiers système
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Fichiers Windows
+*.lnk
+*.swp
+*.swo
+*~
+
+# Fichiers de cache
+.cache/
+*.cache
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Snowflake (si vous avez des fichiers de configuration sensibles)
+snowflake_config.json
+*.snowflake
+
+# Fichiers temporaires d'images
+data/images/tmp*.png
+data/images/tmp*.jpg
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+*~
+
+# Fichiers de logs
+*.log
+logs/
+
+# Fichiers de configuration locaux
+config.local.json
+settings.local.json
+
