@@ -114,5 +114,4 @@ Projet académique - Utilisation libre pour l'évaluation
 
 ---
 
-**Bon travail ! 🚀**
 
