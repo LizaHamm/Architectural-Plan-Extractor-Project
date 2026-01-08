@@ -16,6 +16,8 @@ import tempfile
 import json
 from typing import Dict, List, Optional
 import traceback
+from ultralytics import YOLO
+
 
 # Configuration de la page
 st.set_page_config(
@@ -76,7 +78,7 @@ with st.sidebar:
     # Modèle YOLO
     yolo_model = st.selectbox(
         "Modèle YOLO",
-        options=["yolov8n.pt", "yolov8s.pt", "yolov8m.pt", "yolov8l.pt", "yolov8x.pt"],
+        options=["yolov8n.pt", "yolov8s.pt", "yolov8m.pt", "yolov8l.pt", "yolov8x.pt",  "models/best.pt"],
         index=0,
         help="Modèle YOLO à utiliser pour la détection"
     )
@@ -180,7 +182,6 @@ with tab1:
                         import cv2
                         import numpy as np
                         from PIL import Image
-                        from ultralytics import YOLO
                         
                         # Configuration simplifiée
                         class SimpleConfig:
@@ -203,7 +204,10 @@ with tab1:
                             def __init__(self, config):
                                 self.config = config
                                 try:
-                                    import fitz  # PyMuPDF
+                                    try:
+                                        import fitz  # PyMuPDF
+                                    except ImportError:
+                                        import pymupdf as fitz
                                     self.fitz = fitz
                                 except ImportError:
                                     st.error("PyMuPDF (fitz) n'est pas installé. Installez-le avec: pip install PyMuPDF")
@@ -292,7 +296,15 @@ with tab1:
                             def __init__(self, config, model_name="yolov8n.pt", conf_threshold=0.25):
                                 self.config = config
                                 self.conf_threshold = conf_threshold
-                                self.model = YOLO(model_name)
+                                from pathlib import Path
+
+                                model_path = Path(model_name)
+                                if model_path.exists():
+                                    self.model = YOLO(str(model_path))
+                                else:
+                                    self.model = YOLO(model_name)
+                                st.sidebar.success(f"Classes du modèle : {self.model.names}")
+
                             
                             def label_image(self, image_path: str):
                                 """Détecte les objets dans une image"""
@@ -526,6 +538,8 @@ with tab3:
     - **PyMuPDF (fitz)**: Extraction PDF
     - **OpenCV**: Traitement d'images
     - **PIL/Pillow**: Manipulation d'images
+
+    “Dans cette version de démonstration, le modèle YOLO utilisé est un modèle générique (COCO) qui n’est pas encore fine‑tuné sur des plans architecturaux, ce qui explique le faible nombre de détections pertinentes. Le pipeline reste cependant entièrement opérationnel et prêt pour un entraînement spécifique sur un dataset de plans annotés.
     
     #### 📖 Documentation
     
