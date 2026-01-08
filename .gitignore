@@ -137,3 +137,11 @@ logs/
 config.local.json
 settings.local.json
 
+rsa_key.p8
+rsa_key.pub
+clean_anthropic_response.txt
+raw_anthropic_response.txt
+debug_claude_scenarios.json
+# GitHub Actions cache
+/.github/.cache
+
