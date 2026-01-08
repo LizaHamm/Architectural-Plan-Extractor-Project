@@ -1,0 +1,482 @@
+[
+{
+    "scenario_id": "plan_001",
+    "type_plan": "appartement",
+    "nombre_pieces": 4,
+    "superficie_totale_m2": 85.6,
+    "dimensions": {
+        "longueur_m": 12.8,
+        "largeur_m": 6.7,
+        "hauteur_m": 2.9
+    },
+    "elements": [
+        {
+            "type": "porte",
+            "position": [3.2, 1.5],
+            "dimensions": {
+                "longueur_m": 0.9,
+                "largeur_m": 2.1
+            },
+            "orientation": 90,
+            "style": "moderne"
+        },
+        {
+            "type": "fenetre",
+            "position": [9.1, 2.3],
+            "dimensions": {
+                "longueur_m": 1.4,
+                "largeur_m": 1.2
+            },
+            "orientation": 180,
+            "style": "moderne"
+        },
+        {
+            "type": "mur",
+            "position": [0.0, 0.0],
+            "dimensions": {
+                "longueur_m": 12.8,
+                "largeur_m": 0.2
+            },
+            "orientation": 0,
+            "style": "moderne"
+        }
+    ],
+    "pieces": [
+        {
+            "nom": "salon",
+            "superficie_m2": 25.6,
+            "position": [0.0, 0.0],
+            "dimensions": {
+                "longueur_m": 6.4,
+                "largeur_m": 4.0
+            },
+            "elements": ["porte_1", "fenetre_1"]
+        },
+        {
+            "nom": "chambre",
+            "superficie_m2": 12.8,
+            "position": [6.4, 0.0],
+            "dimensions": {
+                "longueur_m": 4.0,
+                "largeur_m": 3.2
+            },
+            "elements": []
+        }
+    ],
+    "style_architectural": "moderne",
+    "echelle": "1:100",
+    "orientation_batiment": "nord"
+},
+{
+    "scenario_id": "plan_002",
+    "type_plan": "maison",
+    "nombre_pieces": 6,
+    "superficie_totale_m2": 150.0,
+    "dimensions": {
+        "longueur_m": 15.0,
+        "largeur_m": 10.0,
+        "hauteur_m": 3.2
+    },
+    "elements": [
+        {
+            "type": "porte",
+            "position": [7.5, 0.0],
+            "dimensions": {
+                "longueur_m": 1.0,
+                "largeur_m": 2.1
+            },
+            "orientation": 90,
+            "style": "classique"
+        },
+        {
+            "type": "fenetre",
+            "position": [3.0, 5.0],
+            "dimensions": {
+                "longueur_m": 1.6,
+                "largeur_m": 1.2
+            },
+            "orientation": 180,
+            "style": "classique"
+        },
+        {
+            "type": "escalier",
+            "position": [12.0, 7.5],
+            "dimensions": {
+                "longueur_m": 3.0,
+                "largeur_m": 1.2
+            },
+            "orientation": 0,
+            "style": "classique"
+        }
+    ],
+    "pieces": [
+        {
+            "nom": "salon",
+            "superficie_m2": 30.0,
+            "position": [0.0, 0.0],
+            "dimensions": {
+                "longueur_m": 6.0,
+                "largeur_m": 5.0
+            },
+            "elements": ["porte_1", "fenetre_1"]
+        },
+        {
+            "nom": "cuisine",
+            "superficie_m2": 15.0,
+            "position": [6.0, 0.0],
+            "dimensions": {
+                "longueur_m": 5.0,
+                "largeur_m": 3.0
+            },
+            "elements": []
+        }
+    ],
+    "style_architectural": "classique",
+    "echelle": "1:100",
+    "orientation_batiment": "sud"
+},
+{
+    "scenario_id": "plan_003",
+    "type_plan": "bureau",
+    "nombre_pieces": 10,
+    "superficie_totale_m2": 320.0,
+    "dimensions": {
+        "longueur_m": 20.0,
+        "largeur_m": 16.0,
+        "hauteur_m": 3.5
+    },
+    "elements": [
+        {
+            "type": "porte",
+            "position": [5.0, 0.0],
+            "dimensions": {
+                "longueur_m": 1.0,
+                "largeur_m": 2.1
+            },
+            "orientation": 90,
+            "style": "contemporain"
+        },
+        {
+            "type": "fenetre",
+            "position": [10.0, 12.0],
+            "dimensions": {
+                "longueur_m": 1.8,
+                "largeur_m": 1.4
+            },
+            "orientation": 180,
+            "style": "contemporain"
+        },
+        {
+            "type": "colonne",
+            "position": [2.5, 2.5],
+            "dimensions": {
+                "longueur_m": 0.4,
+                "largeur_m": 0.4
+            },
+            "orientation": 0,
+            "style": "contemporain"
+        }
+    ],
+    "pieces": [
+        {
+            "nom": "bureau_direction",
+            "superficie_m2": 25.0,
+            "position": [0.0, 0.0],
+            "dimensions": {
+                "longueur_m": 5.0,
+                "largeur_m": 5.0
+            },
+            "elements": ["porte_1", "fenetre_1"]
+        },
+        {
+            "nom": "open_space",
+            "superficie_m2": 120.0,
+            "position": [5.0, 0.0],
+            "dimensions": {
+                "longueur_m": 12.0,
+                "largeur_m": 10.0
+            },
+            "elements": ["colonne_1"]
+        }
+    ],
+    "style_architectural": "contemporain",
+    "echelle": "1:100",
+    "orientation_batiment": "est"
+},
+{
+    "scenario_id": "plan_004",
+    "type_plan": "commercial",
+    "nombre_pieces": 8,
+    "superficie_totale_m2": 450.0,
+    "dimensions": {
+        "longueur_m": 25.0,
+        "largeur_m": 18.0,
+        "hauteur_m": 4.0
+    },
+    "elements": [
+        {
+            "type": "porte",
+            "position": [12.5, 0.0],
+            "dimensions": {
+                "longueur_m": 1.2,
+                "largeur_m": 2.2
+            },
+            "orientation": 90,
+            "style": "moderne"
+        },
+        {
+            "type": "fenetre",
+            "position": [5.0, 10.0],
+            "dimensions": {
+                "longueur_m": 2.0,
+                "largeur_m": 1.6
+            },
+            "orientation": 180,
+            "style": "moderne"
+        },
+        {
+            "type": "sanitaire",
+            "position": [20.0, 5.0],
+            "dimensions": {
+                "longueur_m": 4.0,
+                "largeur_m": 3.0
+            },
+            "orientation": 0,
+            "style": "moderne"
+        }
+    ],
+    "pieces": [
+        {
+            "nom": "salle_exposition",
+            "superficie_m2": 200.0,
+            "position": [0.0, 0.0],
+            "dimensions": {
+                "longueur_m": 20.0,
+                "largeur_m": 10.0
+            },
+            "elements": ["porte_1", "fenetre_1"]
+        },
+        {
+            "nom": "bureau_accueil",
+            "superficie_m2": 25.0,
+            "position": [20.0, 0.0],
+            "dimensions": {
+                "longueur_m": 5.0,
+                "largeur_m": 5.0
+            },
+            "elements": ["sanitaire_1"]
+        }
+    ],
+    "style_architectural": "moderne",
+    "echelle": "1:200",
+    "orientation_batiment": "ouest"
+},
+{
+    "scenario_id": "plan_005",
+    "type_plan": "industriel",
+    "nombre_pieces": 5,
+    "superficie_totale_m2": 800.0,
+    "dimensions": {
+        "longueur_m": 40.0,
+        "largeur_m": 20.0,
+        "hauteur_m": 6.0
+    },
+    "elements": [
+        {
+            "type": "porte",
+            "position": [10.0, 0.0],
+            "dimensions": {
+                "longueur_m": 1.5,
+                "largeur_m": 2.5
+            },
+            "orientation": 90,
+            "style": "industriel"
+        },
+        {
+            "type": "fenetre",
+            "position": [20.0, 15.0],
+            "dimensions": {
+                "longueur_m": 2.2,
+                "largeur_m": 1.8
+            },
+            "orientation": 180,
+            "style": "industriel"
+        },
+        {
+            "type": "mur",
+            "position": [0.0, 0.0],
+            "dimensions": {
+                "longueur_m": 40.0,
+                "largeur_m": 0.3
+            },
+            "orientation": 0,
+            "style": "industriel"
+        }
+    ],
+    "pieces": [
+        {
+            "nom": "atelier_production",
+            "superficie_m2": 600.0,
+            "position": [0.0, 0.0],
+            "dimensions": {
+                "longueur_m": 30.0,
+                "largeur_m": 20.0
+            },
+            "elements": ["porte_1", "fenetre_1", "mur_1"]
+        },
+        {
+            "nom": "bureau_direction",
+            "superficie_m2": 50.0,
+            "position": [35.0, 0.0],
+            "dimensions": {
+                "longueur_m": 10.0,
+                "largeur_m": 5.0
+            },
+            "elements": []
+        }
+    ],
+    "style_architectural": "industriel",
+    "echelle": "1:200",
+    "orientation_batiment": "nord"
+},
+{
+    "scenario_id": "plan_006",
+    "type_plan": "appartement",
+    "nombre_pieces": 3,
+    "superficie_totale_m2": 65.0,
+    "dimensions": {
+        "longueur_m": 10.0,
+        "largeur_m": 6.5,
+        "hauteur_m": 2.8
+    },
+    "elements": [
+        {
+            "type": "porte",
+            "position": [2.5, 0.0],
+            "dimensions": {
+                "longueur_m": 0.9,
+                "largeur_m": 2.0
+            },
+            "orientation": 90,
+            "style": "moderne"
+        },
+        {
+            "type": "fenetre",
+            "position": [7.5, 3.0],
+            "dimensions": {
+                "longueur_m": 1.2,
+                "largeur_m": 1.0
+            },
+            "orientation": 180,
+            "style": "moderne"
+        },
+        {
+            "type": "mur",
+            "position": [0.0, 0.0],
+            "dimensions": {
+                "longueur_m": 10.0,
+                "largeur_m": 0.2
+            },
+            "orientation": 0,
+            "style": "moderne"
+        }
+    ],
+    "pieces": [
+        {
+            "nom": "salon",
+            "superficie_m2": 20.0,
+            "position": [0.0, 0.0],
+            "dimensions": {
+                "longueur_m": 5.0,
+                "largeur_m": 4.0
+            },
+            "elements": ["porte_1", "fenetre_1"]
+        },
+        {
+            "nom": "chambre",
+            "superficie_m2": 15.0,
+            "position": [5.0, 0.0],
+            "dimensions": {
+                "longueur_m": 5.0,
+                "largeur_m": 3.0
+            },
+            "elements": []
+        }
+    ],
+    "style_architectural": "moderne",
+    "echelle": "1:100",
+    "orientation_batiment": "sud"
+},
+{
+    "scenario_id": "plan_007",
+    "type_plan": "maison",
+    "nombre_pieces": 7,
+    "superficie_totale_m2": 180.0,
+    "dimensions": {
+        "longueur_m": 18.0,
+        "largeur_m": 10.0,
+        "hauteur_m": 3.5
+    },
+    "elements": [
+        {
+            "type": "porte",
+            "position": [9.0, 0.0],
+            "dimensions": {
+                "longueur_m": 1.0,
+                "largeur_m": 2.1
+            },
+            "orientation": 90,
+            "style": "classique"
+        },
+        {
+            "type": "fenetre",
+            "position": [4.0, 6.0],
+            "dimensions": {
+                "longueur_m": 1.4,
+                "largeur_m": 1.2
+            },
+            "orientation": 180,
+            "style": "classique"
+        },
+        {
+            "type": "escalier",
+            "position": [14.0, 8.0],
+            "dimensions": {
+                "longueur_m": 3.5,
+                "largeur_m": 1.2
+            },
+            "orientation": 0,
+            "style": "classique"
+        }
+    ],
+    "pieces": [
+        {
+            "nom": "salon",
+            "superficie_m2": 35.0,
+            "position": [0.0, 0.0],
+            "dimensions": {
+                "longueur_m": 7.0,
+                "largeur_m": 5.0
+            },
+            "elements": ["porte_1", "fenetre_1"]
+        },
+        {
+            "nom": "cuisine",
+            "superficie_m2": 18.0,
+            "position": [7.0, 0.0],
+            "dimensions": {
+                "longueur_m": 6.0,
+                "largeur_m": 3.0
+            },
+            "elements": ["escalier_1"]
+        }
+    ],
+    "style_architectural": "classique",
+    "echelle": "1:100",
+    "orientation_batiment": "est"
+},
+{
+    "scenario_id": "plan_008",
+    "type_plan": "bureau",
+    "nombre_pieces": 12,
+    "superficie_totale_m2":

@@ -1,0 +1,372 @@
+[
+{
+  "scenario_id": "Maison_1",
+  "type_batiment": "Maison individuelle",
+  "nombre_pieces": 5,
+  "superficie_totale_m2": 120.5,
+  "dimensions": {
+    "longueur_m": 12.5,
+    "largeur_m": 9.6,
+    "hauteur_m": 3.2
+  },
+  "elements": [
+    {
+      "type": "Porte d'entrée",
+      "position": [3.2, 1.5],
+      "dimensions": {
+        "longueur_m": 1.0,
+        "largeur_m": 2.1
+      },
+      "orientation": 0,
+      "style": "Bois"
+    },
+    {
+      "type": "Fenêtre",
+      "position": [2.1, 2.4],
+      "dimensions": {
+        "longueur_m": 1.5,
+        "largeur_m": 1.2
+      },
+      "orientation": 90,
+      "style": "Aluminium"
+    },
+    {
+      "type": "Cheminée",
+      "position": [7.8, 4.2],
+      "dimensions": {
+        "longueur_m": 0.8,
+        "largeur_m": 0.6
+      },
+      "orientation": 0,
+      "style": "Pierre"
+    }
+  ],
+  "pieces": [
+    {
+      "nom": "Salon",
+      "superficie_m2": 25.0,
+      "position": [0.0, 0.0],
+      "dimensions": {
+        "longueur_m": 5.0,
+        "largeur_m": 5.0
+      },
+      "elements": ["Fenêtre", "Porte d'entrée"]
+    },
+    {
+      "nom": "Cuisine",
+      "superficie_m2": 15.0,
+      "position": [5.0, 0.0],
+      "dimensions": {
+        "longueur_m": 5.0,
+        "largeur_m": 3.0
+      },
+      "elements": ["Fenêtre"]
+    },
+    {
+      "nom": "Chambre 1",
+      "superficie_m2": 16.0,
+      "position": [0.0, 5.0],
+      "dimensions": {
+        "longueur_m": 4.0,
+        "largeur_m": 4.0
+      },
+      "elements": ["Fenêtre"]
+    }
+  ],
+  "style_architectural": "Contemporain",
+  "echelle": "1:100",
+  "orientation_batiment": "Nord-Sud"
+},
+{
+  "scenario_id": "Appartement_1",
+  "type_batiment": "Appartement",
+  "nombre_pieces": 3,
+  "superficie_totale_m2": 65.0,
+  "dimensions": {
+    "longueur_m": 10.0,
+    "largeur_m": 6.5,
+    "hauteur_m": 2.8
+  },
+  "elements": [
+    {
+      "type": "Porte d'entrée",
+      "position": [0.0, 3.0],
+      "dimensions": {
+        "longueur_m": 0.9,
+        "largeur_m": 2.0
+      },
+      "orientation": 0,
+      "style": "Métal"
+    },
+    {
+      "type": "Fenêtre",
+      "position": [5.0, 1.5],
+      "dimensions": {
+        "longueur_m": 1.2,
+        "largeur_m": 1.5
+      },
+      "orientation": 90,
+      "style": "PVC"
+    },
+    {
+      "type": "Balcon",
+      "position": [7.0, 2.0],
+      "dimensions": {
+        "longueur_m": 3.0,
+        "largeur_m": 1.2
+      },
+      "orientation": 180,
+      "style": "Métal"
+    }
+  ],
+  "pieces": [
+    {
+      "nom": "Salon-Cuisine",
+      "superficie_m2": 30.0,
+      "position": [0.0, 0.0],
+      "dimensions": {
+        "longueur_m": 6.0,
+        "largeur_m": 5.0
+      },
+      "elements": ["Fenêtre", "Balcon"]
+    },
+    {
+      "nom": "Chambre",
+      "superficie_m2": 20.0,
+      "position": [0.0, 5.0],
+      "dimensions": {
+        "longueur_m": 5.0,
+        "largeur_m": 4.0
+      },
+      "elements": ["Fenêtre"]
+    }
+  ],
+  "style_architectural": "Classique",
+  "echelle": "1:50",
+  "orientation_batiment": "Est-Ouest"
+},
+{
+  "scenario_id": "Bureau_1",
+  "type_batiment": "Bureau",
+  "nombre_pieces": 8,
+  "superficie_totale_m2": 350.0,
+  "dimensions": {
+    "longueur_m": 20.0,
+    "largeur_m": 17.5,
+    "hauteur_m": 3.5
+  },
+  "elements": [
+    {
+      "type": "Porte d'entrée",
+      "position": [0.0, 8.0],
+      "dimensions": {
+        "longueur_m": 1.2,
+        "largeur_m": 2.1
+      },
+      "orientation": 0,
+      "style": "Verre"
+    },
+    {
+      "type": "Fenêtre",
+      "position": [5.0, 2.0],
+      "dimensions": {
+        "longueur_m": 2.0,
+        "largeur_m": 1.5
+      },
+      "orientation": 90,
+      "style": "Aluminium"
+    },
+    {
+      "type": "Ascenseur",
+      "position": [18.0, 15.0],
+      "dimensions": {
+        "longueur_m": 1.5,
+        "largeur_m": 1.8
+      },
+      "orientation": 0,
+      "style": "Métal"
+    }
+  ],
+  "pieces": [
+    {
+      "nom": "Accueil",
+      "superficie_m2": 25.0,
+      "position": [0.0, 0.0],
+      "dimensions": {
+        "longueur_m": 5.0,
+        "largeur_m": 5.0
+      },
+      "elements": ["Porte d'entrée"]
+    },
+    {
+      "nom": "Bureau Directeur",
+      "superficie_m2": 30.0,
+      "position": [5.0, 0.0],
+      "dimensions": {
+        "longueur_m": 6.0,
+        "largeur_m": 5.0
+      },
+      "elements": ["Fenêtre"]
+    },
+    {
+      "nom": "Salle de réunion",
+      "superficie_m2": 40.0,
+      "position": [0.0, 10.0],
+      "dimensions": {
+        "longueur_m": 8.0,
+        "largeur_m": 5.0
+      },
+      "elements": ["Fenêtre", "Ascenseur"]
+    }
+  ],
+  "style_architectural": "Moderne",
+  "echelle": "1:200",
+  "orientation_batiment": "Nord-Est"
+},
+{
+  "scenario_id": "Local_commercial_1",
+  "type_batiment": "Local commercial",
+  "nombre_pieces": 4,
+  "superficie_totale_m2": 180.0,
+  "dimensions": {
+    "longueur_m": 15.0,
+    "largeur_m": 12.0,
+    "hauteur_m": 3.8
+  },
+  "elements": [
+    {
+      "type": "Porte d'entrée",
+      "position": [0.0, 6.0],
+      "dimensions": {
+        "longueur_m": 1.4,
+        "largeur_m": 2.2
+      },
+      "orientation": 0,
+      "style": "Verre"
+    },
+    {
+      "type": "Vitrine",
+      "position": [2.0, 0.0],
+      "dimensions": {
+        "longueur_m": 8.0,
+        "largeur_m": 2.0
+      },
+      "orientation": 90,
+      "style": "Aluminium"
+    },
+    {
+      "type": "Porte de livraison",
+      "position": [12.0, 10.0],
+      "dimensions": {
+        "longueur_m": 2.0,
+        "largeur_m": 2.5
+      },
+      "orientation": 180,
+      "style": "Métal"
+    }
+  ],
+  "pieces": [
+    {
+      "nom": "Espace de vente",
+      "superficie_m2": 100.0,
+      "position": [0.0, 0.0],
+      "dimensions": {
+        "longueur_m": 10.0,
+        "largeur_m": 10.0
+      },
+      "elements": ["Porte d'entrée", "Vitrine"]
+    },
+    {
+      "nom": "Réserve",
+      "superficie_m2": 30.0,
+      "position": [10.0, 0.0],
+      "dimensions": {
+        "longueur_m": 5.0,
+        "largeur_m": 6.0
+      },
+      "elements": ["Porte de livraison"]
+    }
+  ],
+  "style_architectural": "Industriel",
+  "echelle": "1:100",
+  "orientation_batiment": "Est-Ouest"
+},
+{
+  "scenario_id": "Entrepôt_1",
+  "type_batiment": "Entrepôt industriel",
+  "nombre_pieces": 3,
+  "superficie_totale_m2": 800.0,
+  "dimensions": {
+    "longueur_m": 40.0,
+    "largeur_m": 20.0,
+    "hauteur_m": 8.0
+  },
+  "elements": [
+    {
+      "type": "Porte de garage",
+      "position": [0.0, 10.0],
+      "dimensions": {
+        "longueur_m": 4.0,
+        "largeur_m": 4.5
+      },
+      "orientation": 0,
+      "style": "Métal"
+    },
+    {
+      "type": "Fenêtre",
+      "position": [10.0, 5.0],
+      "dimensions": {
+        "longueur_m": 2.0,
+        "largeur_m": 1.5
+      },
+      "orientation": 90,
+      "style": "PVC"
+    },
+    {
+      "type": "Quai de chargement",
+      "position": [35.0, 15.0],
+      "dimensions": {
+        "longueur_m": 5.0,
+        "largeur_m": 3.0
+      },
+      "orientation": 180,
+      "style": "Béton"
+    }
+  ],
+  "pieces": [
+    {
+      "nom": "Zone de stockage",
+      "superficie_m2": 600.0,
+      "position": [0.0, 0.0],
+      "dimensions": {
+        "longueur_m": 30.0,
+        "largeur_m": 20.0
+      },
+      "elements": ["Porte de garage", "Fenêtre"]
+    },
+    {
+      "nom": "Bureau",
+      "superficie_m2": 80.0,
+      "position": [35.0, 0.0],
+      "dimensions": {
+        "longueur_m": 8.0,
+        "largeur_m": 10.0
+      },
+      "elements": ["Fenêtre"]
+    },
+    {
+      "nom": "Quai de chargement",
+      "superficie_m2": 120.0,
+      "position": [35.0, 10.0],
+      "dimensions": {
+        "longueur_m": 12.0,
+        "largeur_m": 10.0
+      },
+      "elements": ["Quai de chargement"]
+    }
+  ],
+  "style_architectural": "Industriel",
+  "echelle": "1:400",
+  "orientation_batiment": "Nord-Sud"
+}
+]
