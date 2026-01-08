@@ -2,6 +2,8 @@
 
 Projet d'extraction automatique de plans numériques exploitables (format vectoriel ou BIM) à partir de documents PDF d'architecte grâce à la vision par ordinateur et au deep learning.
 
+## 🎬 Démonstration WebUI Voici un aperçu de l’interface Streamlit : ![WebUI Demo](demo.gif)
+
 ## 🚀 Démarrage Rapide
 
 ### 1. Installation
